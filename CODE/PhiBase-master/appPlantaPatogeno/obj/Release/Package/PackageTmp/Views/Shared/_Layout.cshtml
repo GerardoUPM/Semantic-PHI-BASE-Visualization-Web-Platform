@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title - Web TFG ASP.NET</title>
+    @Styles.Render("~/Content/Site.css")
+    @Scripts.Render("~/Scripts/go-debug.js")
+    @Scripts.Render("~/Scripts/pintarNodos.js")
+    @Scripts.Render("~/Scripts/script-principal.js")
+    @Scripts.Render("~/Scripts/jquery-1.10.2.js")
+</head>
+<body>
+    <div class="container body-content">
+        @RenderBody()
+        <hr id="linea" />
+        <footer id="footer">
+            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+        </footer>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    @Scripts.Render("~/Scripts/script-principal.js")
+    @RenderSection("MyScripts", required: false)
+</body>
+</html>

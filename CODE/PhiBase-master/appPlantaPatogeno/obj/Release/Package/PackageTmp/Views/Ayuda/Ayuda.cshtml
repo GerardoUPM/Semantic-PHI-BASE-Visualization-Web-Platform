@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "Ayuda";
+    string urlHome = Request.Url.AbsoluteUri;
+    string[] dividir = urlHome.Split('A');
+    string[] url2 = urlHome.Split('?');
+    string path1 = dividir[0] + "Contacto/Contacto?" + url2[1] + "?" + url2[2];
+    string path2 = dividir[0] + "?" + url2[2];
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Página de Ayuda</title>
+    <meta name="description" content="TFG-plataforma web de un repositorio semántico de interacciones planta-patógeno">
+    <script type="text/javascript" src=""></script>
+</head>
+<body onload="init()">
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img id="logo" src="@Url.Content("~/Imagenes/logo-upm.png")" />
+            </div>
+            <div class="titulo">
+                <h1>Página de Ayuda</h1>
+            </div>
+            <nav>
+                <a href="@path2">Inicio</a>
+                <a href="@path1">Contacto</a>
+                <a href="@urlHome">Ayuda</a>
+            </nav>
+        </div>
+    </header>
+    <div class="datosAyuda">
+        <h2>En este apartado se pretende exponer un  pequeño manual que proporcionará al usuario una guía rápida para poder manejar rápidamente la plataforma.</h2>
+        <div class="elementosComunes">
+            <h3>Elementos Comunes: Se van a establecer los elementos comunes entre los distintos casos de uso.</h3>
+            <p>La cabecera es el elemento común entre los distintos casos de uso. En la página de inicio la cabecera se puede observar con los tres enlaces siguientes: inicio, contacto y ayuda.</p>
+            <img id="manualCabecera" src="@Url.Content("~/Imagenes/manual1.JPG")" />
+            <p>Una vez se accede a la página de contacto cambiará el título de la cabecera.</p>
+            <img id="manualCabecera" src="@Url.Content("~/Imagenes/manual2.JPG")" />
+            <p>Así mismo al acceder a la página de ayuda, también cambiará el título de la cabecera.</p>
+            <img id="manualCabecera" src="@Url.Content("~/Imagenes/manual3.JPG")" />
+        </div>
+        <div class="opcion1">
+            <h3>Opción 1 (solo diagrama local): En este caso se accede a la página mediante la url y un único valor en la url, el correspondiente a la interacción que se quiere consultar.
+                <br>URL de Ejemplo="http://localhost:52312/?interaction=http://linkeddata.systems/SemanticPHIBase/Resource/interaction/INT_00003" </h3>
+            <p>Según accedemos a la plataforma se puede observar el primer diagrama, el cual corresponde al diagrama local, que representa hasta los dos nodos de distancia, y cómo se encuentra el foco centrado en la interacción.</p>
+            <img id="manualBig" src="@Url.Content("~/Imagenes/manual4.JPG")" />
+            <p>A continuación del diagrama local se puede observar el cuadro de resultados, el cual se encarga de mostrar la información adicional (si la hay), del nodo en el que se encuentra el foco en el diagrama local.</p>
+            <img id="manualSmall" src="@Url.Content("~/Imagenes/manual5.JPG")" />
+            <p>De esta manera si realizamos un click en cualquier nodo el cual no contenga información, mostrará el siguiente mensaje: “No hay información disponible”, como se puede observar a continuación.</p>
+            <img id="manualBig" src="@Url.Content("~/Imagenes/manual7.JPG")" />
+            <p>Sin embargo si realizáramos un click en cualquier nodo que contenga información, en el cuadro de resultados se mostrará dicha información, como por ejemplo si se realiza este click sobre el nodo “PHI Base ID”, como se puede observar a continuación:</p>
+            <img id="manualBig" src="@Url.Content("~/Imagenes/manual6.JPG")" />
+            <p>A continuacion nos encontramos con un botón, para la interacción con el usuario encargado de mostrar u ocultar el diagrama completo. Por lo tanto si se realiza click sobre el boton, se debe de ocultar el diagrama completo para mejorar la visualizacion por parte del usuario.</p>
+            <img id="manualBig" src="@Url.Content("~/Imagenes/manual8.JPG")" />
+            <p>Al hacer click sobre el botón, el resultado es la desaparición del diagrama completo, como se ha dicho anteriormente, tal y como se puede ver a continuación.</p>
+            <img id="manualSmall" src="@Url.Content("~/Imagenes/manual9.JPG")" />
+            <p>Por último, nos encontramos frente al último elemento de la plataforma web, el diagrama completo de la interacción. Se puede observar como al iniciar la aplicación web, el diagrama se encuentra con el foco en la interacción debido a los parámetros que provienen de la url.</p>
+            <img id="manualBig" src="@Url.Content("~/Imagenes/manual13.JPG")" />
+            <p>De esta manera si navegamos por el diagrama local, por ejemplo a la description,</p>
+            <img id="manualBig" src="@Url.Content("~/Imagenes/manual14.JPG")" />
+            <p>El diagrama completo se va actualizando al mismo tiempo, para que el usuario pueda localizarse en todo momento.</p>
+            <img id="manualBig" src="@Url.Content("~/Imagenes/manual15.JPG")" />
+            <p>Además de esto, si se realiza un click en cualquier nodo del diagrama completo se actualizará el diagrama local a la vez, de esta manera se puede navegar con total libertad por el diagrama al completo.</p>
+            <img id="manualBig" src="@Url.Content("~/Imagenes/manual16.JPG")" />
+            <p>Se actualiza el diagrama local a la vez.</p>
+            <img id="manualBig" src="@Url.Content("~/Imagenes/manual17.JPG")" />
+        </div>
+        <div class="opcion2">
+            <h3>Opción 2 (Interaction + nodo):Se realiza el acceso a la plataforma añadiendo dos parámetros a la url, la interacción y el valor del nodo en el que se quiere centrar la plataforma.
+                <br>URL de Ejemplo="http://localhost:52312/?interaction=http://linkeddata.systems/SemanticPHIBase/Resource/interaction/INT_00002&class_type=http://linkeddata.systems/SemanticPHIBase/Resource/gene/GENE_00002"
+            En esta segunda opción se aplican las mismas funcionalidades que en el apartado anterior, tanto las interacciones en el diagrama local, como las que se realizan con el diagrama completo, además de la funcionalidad del botón de “diagrama completo”, con la única diferencia en relación al modo en que se estructuran tanto el diagrama local, como el diagrama completo al iniciar la plataforma.
+            </h3>
+            <p>El diagrama local aparece centrado en el segundo parámetro que se le dio a la url en el momento de arrancar la plataforma, como se puede apreciar a continuación.</p>
+            <img id="manualBig" src="@Url.Content("~/Imagenes/manual10.JPG")" />
+            <p>Respecto al diagrama competo, el foco se centra del mismo modo, en el segundo parámetro, al igual que el diagrama local.</p>
+            <img id="manualBig" src="@Url.Content("~/Imagenes/manual12.JPG")" />
+        </div>
+    </div>
+</body>
+</html>
+

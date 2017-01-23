@@ -1,0 +1,58 @@
+﻿@{
+    string urlHome = Request.Url.AbsoluteUri;
+    string[] dividir = urlHome.Split('?');
+    string path1 = dividir[0] + "Contacto/Contacto?url=" + urlHome;
+    string path2 = dividir[0] + "Ayuda/Ayuda?url=" + urlHome;
+    ViewBag.Title = "Home Page";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PLATAFORMA WEB VISUALIZACION PHI-BASE</title>
+    <meta name="description" content="TFG-plataforma web de un repositorio semántico de interacciones planta-patógeno">
+    <script type="text/javascript" src=""></script>
+</head>
+<body onload="init()">
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img id="logo" src="@Url.Content("~/Imagenes/logo-upm.png")" />
+            </div>
+            <div class="titulo">
+                <h1>PLATAFORMA WEB VISUALIZACION PHI-BASE</h1>
+            </div>
+            <nav>
+                <a href="">Inicio</a>
+                <a href="@path1">Contacto</a>
+                <a href="@path2">Ayuda</a>
+            </nav>
+        </div>
+    </header>
+    <div id="sample">
+        <div id="localDiagram" style="height:350px;width:100%;border:1px solid black;margin:2px"></div>
+        <div class="resultado">
+            <h2>Información del Nodo:</h2>
+            <div id="res" align="center">
+                <form name="frmTabla" id="frmTabla">
+                    <input name="txtTabla" type="text" id="txtTabla" value="" readonly="readonly">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div align="center">
+            <a class="boton" id="Save" title="Mostrar Texto" onClick="fun()">Diagrama Completo</a>
+        </div>
+    </div>
+    <div id="fullDiagram" class="visible" style="height:550px;width:100%;border:1px solid black;margin:2px;"></div>
+
+    <textarea id="mySavedModel" style="width:100%;height:250px;display:none">
+        @ViewData["Nodos"]
+    </textarea>
+    <textarea id="Nodo" style="width:100%;height:250px;display:none">
+        @Html.Raw(ViewData["Nodo"])
+    </textarea>
+    @*</div>*@
+</body>
+</html>

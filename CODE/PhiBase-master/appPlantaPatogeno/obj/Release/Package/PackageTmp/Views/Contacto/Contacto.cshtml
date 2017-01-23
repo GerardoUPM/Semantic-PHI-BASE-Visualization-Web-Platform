@@ -1,0 +1,64 @@
+﻿
+@{
+    string urlHome = Request.Url.AbsoluteUri;
+    string[] dividir = urlHome.Split('C');
+    string[] url2 = urlHome.Split('?');
+    string path1 = dividir[0] + "Ayuda/Ayuda?" + url2[1] + "?" + url2[2];
+    string path2 = dividir[0] + "?" + url2[2];
+    ViewBag.Title = "Contacto";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Página de Contacto</title>
+    <meta name="description" content="TFG-plataforma web de un repositorio semántico de interacciones planta-patógeno">
+    <script type="text/javascript" src=""></script>
+</head>
+<body onload="init()">
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img id="logo" src="@Url.Content("~/Imagenes/logo-upm.png")" />
+            </div>
+            <div class="titulo">
+                <h1>Página de Contacto</h1>
+            </div>
+            <nav>
+                <a href="@path2">Inicio</a>
+                <a href="@urlHome">Contacto</a>
+                <a href="@path1">Ayuda</a>
+            </nav>
+        </div>
+    </header>
+    <div class="info">
+        <div class="info-contacto2" id="recuadro">
+            <h2>Autor:</h2>
+            <p>Roberto García Salgado</p>
+            <h2>Dirección de correo:</h2>
+            <p>r.gsalgado@alumnos.upm.es</p>
+            <h2>LikedIn:</h2>
+            <a href="https://www.likedin.com/in/roberto-garcía-salgaddo-623083110">
+                <p>robert-garcía-salgado</p>
+            </a>
+        </div>
+        <div class="info-contacto2" id="recuadro">
+            <h2>Tutor:</h2>
+            <p>Alejandro Rodríguez González</p>
+            <h2>Dirección de correo:</h2>
+            <p>alejandro.rodriguezg@upm.es</p>
+        </div>
+        <div class="info-contacto3" id="recuadro">
+            <h2>Universidad:</h2>
+            <p>Escuela Técnica Superior de Ingenieros Informáticos</p>
+            <h2>Dirección de correo:</h2>
+            <p>secretaria@fi.upm.es</p>
+            <h3>Localización:</h3>
+            <p>UPM-Campus de Montegancedo</p>
+            <h3>Telefono:</h3>
+            <p>91-336 7407</p>
+        </div>
+    </div>
+</body>
+</html>
+
