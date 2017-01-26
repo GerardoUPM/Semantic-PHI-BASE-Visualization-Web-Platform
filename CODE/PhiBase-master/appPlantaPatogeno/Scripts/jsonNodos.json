@@ -1,0 +1,183 @@
+{
+  "class": "go.TreeModel",
+  "nodeDataArray": [
+    {
+      "key": "Interaction",
+      "color": "orange",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "Phatogen",
+      "parent": "Interaction",
+      "color": "lightblue",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "Host",
+      "parent": "Interaction",
+      "color": "lightblue",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "PhiBase-ID",
+      "parent": "Interaction",
+      "color": "lightblue",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "InteractionContext[Mutant]",
+      "parent": "Interaction",
+      "color": "lightblue",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "InteractionContext[WT]",
+      "parent": "Interaction",
+      "color": "lightblue",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "HostContext",
+      "parent": "InteractionContext[Mutant]",
+      "color": "lightgreen",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "Protocol",
+      "parent": "InteractionContext[Mutant]",
+      "color": "lightgreen",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "Description",
+      "parent": "InteractionContext[Mutant]",
+      "color": "lightgreen",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "PathogenContext",
+      "parent": "InteractionContext[Mutant]",
+      "color": "lightgreen",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "HostContext[WT]",
+      "parent": "InteractionContext[WT]",
+      "color": "lightgreen",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "Protocol2",
+      "parent": "InteractionContext[WT]",
+      "color": "lightgreen",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "Description2",
+      "parent": "InteractionContext[WT]",
+      "color": "lightgreen",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "PathogenContext[WT]",
+      "parent": "InteractionContext[WT]",
+      "color": "lightgreen",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "Allele[WT]",
+      "parent": "PathogenContext[WT]",
+      "color": "blue",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "In vitro growth[WT]",
+      "parent": "Allele[WT]",
+      "color": "blue",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "Lethal knockout[WT]",
+      "parent": "Allele[WT]",
+      "color": "blue",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "Gene[WT]",
+      "parent": "Allele[WT]",
+      "color": "blue",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "LocusID[WT]",
+      "parent": "Gene[WT]",
+      "color": "blue",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "Gene Function[WT]",
+      "parent": "Gene[WT]",
+      "color": "blue",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "Gene Name[WT]",
+      "parent": "Gene[WT]",
+      "color": "blue",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "Gene Accenssion[WT]",
+      "parent": "Gene[WT]",
+      "color": "blue"
+    },
+    {
+      "key": "Allele",
+      "parent": "PathogenContext",
+      "color": "purple",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "In vitro growth",
+      "parent": "Allele",
+      "color": "purple",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "Lethal knockout",
+      "parent": "Allele",
+      "color": "purple",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "Gene",
+      "parent": "Allele",
+      "color": "purple",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "LocusID",
+      "parent": "Gene",
+      "color": "purple",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "Gene Function",
+      "parent": "Gene",
+      "color": "purple",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "Gene Name",
+      "parent": "Gene",
+      "color": "purple",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    },
+    {
+      "key": "Gene Accenssion",
+      "parent": "Gene",
+      "color": "purple",
+      "texto": "Aqui se introduce el texto correspondiente en el caso de que exista"
+    }
+  ]
+}

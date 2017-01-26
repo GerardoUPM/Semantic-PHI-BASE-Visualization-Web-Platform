@@ -1,0 +1,80 @@
+﻿@{
+    string urlHome = Request.Url.AbsoluteUri;
+    string[] dividir = urlHome.Split('?');
+    string path1 = dividir[0] + "Contacto/Contacto?url=" + urlHome;
+    string path2 = dividir[0] + "Ayuda/Ayuda?url=" + urlHome;
+    ViewBag.Title = "Home Page";
+    string sError = "";
+    try
+    {
+        sError = ViewData["sError"].ToString();
+    }
+    catch { sError = ""; }
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SEMANTIC PHI-BASE VISUALIZATION WEB PLATFORM</title>
+    <meta name="description" content="TFG-web platform of a semantic repository of plant-pathogen interactions">
+    <script type="text/javascript" src=""></script>
+    <style>
+        .info, .success, .warning, .error, .validation {
+border: 1px solid;
+margin: 10px 0px;
+padding:15px 10px 15px 50px;
+background-repeat: no-repeat;
+background-position: 10px center;
+}
+.warning {
+color: #9F6000;
+background-color: #FEEFB3;
+background-image: url('warning.png');
+}
+
+    </style>
+</head>
+<body onload="init()">
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img id="logo" src="@Url.Content("~/Imagenes/logo-upm.png")" />
+            </div>
+            <div class="titulo">
+                <h1>SEMANTIC PHI-BASE VISUALIZATION WEB PLATFORM</h1>
+            </div>
+            <nav>
+                <a href="">Index</a>
+                <a href="@path1">Contact</a>
+                <a href="@path2">Help</a>
+            </nav>
+        </div>
+    </header>
+    <div id="sample">
+        <div class="warning" style="display:@{if (sError=="") { WriteLiteral("none;"); } else { WriteLiteral("block;"); } }">@ViewData["sError"] </div>
+        <div id="localDiagram" style="height:350px;width:100%;border:1px solid black;margin:2px"></div>
+        <div class="resultado">
+            <h2>Node information:</h2>
+            <div id="res" align="center">
+                <form name="frmTabla" id="frmTabla">
+                    <input name="txtTabla" type="text" id="txtTabla" value="" readonly="readonly">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div align="center">
+            <a class="boton" id="Save" title="Mostrar Texto" onClick="fun()">Full diagram</a>
+        </div>
+    </div>
+    <div id="fullDiagram" class="visible" style="height:550px;width:100%;border:1px solid black;margin:2px;"></div>
+
+    <textarea id="mySavedModel" style="width:100%;height:250px;display:none">
+        @ViewData["Nodos"]
+    </textarea>
+    <textarea id="Nodo" style="width:100%;height:250px;display:none">
+        @Html.Raw(ViewData["Nodo"])
+    </textarea>
+    @*</div>*@
+</body>
+</html>

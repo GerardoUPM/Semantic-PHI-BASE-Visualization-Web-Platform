@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo es utilizado por el proceso de paquete/publicación de nuestro proyecto Web. Puede personalizar el comportamiento de este proceso
+editando este archivo MSBuild. Para conocer más acerca de esto, visite http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot\appPlantaPatogeno</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/appPlantaPatogeno.dll">
+      <publishTime>06/13/2016 19:06:56</publishTime>
+    </File>
+    <File Include="bin/dotNetRDF.dll">
+      <publishTime>03/20/2015 11:42:14</publishTime>
+    </File>
+    <File Include="bin/HtmlAgilityPack.dll">
+      <publishTime>03/20/2015 11:42:06</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>04/17/2016 16:48:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/17/2016 16:48:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>04/17/2016 16:48:35</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>04/17/2016 16:48:35</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>04/17/2016 16:48:35</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>04/17/2016 16:48:35</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>04/17/2016 16:48:35</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>04/17/2016 16:48:35</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>04/17/2016 16:48:35</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>04/17/2016 16:48:35</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>04/17/2016 16:48:35</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>04/17/2016 16:48:35</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>04/17/2016 16:48:35</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>04/17/2016 16:48:35</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>04/17/2016 16:48:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>04/17/2016 16:48:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/28/2016 17:19:47</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>04/17/2016 16:48:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>04/17/2016 16:48:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>04/17/2016 16:48:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>04/17/2016 16:48:34</publishTime>
+    </File>
+    <File Include="bin/VDS.Common.dll">
+      <publishTime>03/20/2015 11:42:04</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>04/17/2016 16:50:03</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>04/17/2016 16:50:03</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>06/11/2016 17:26:37</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>04/17/2016 16:50:03</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>04/17/2016 16:50:03</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>04/17/2016 16:50:03</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>04/17/2016 16:50:03</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/17/2016 16:48:33</publishTime>
+    </File>
+    <File Include="Imagenes/fondo1-marcaDeAgua.jpg">
+      <publishTime>04/17/2016 16:54:31</publishTime>
+    </File>
+    <File Include="Imagenes/fondo1.jpg">
+      <publishTime>04/17/2016 16:54:31</publishTime>
+    </File>
+    <File Include="Imagenes/logo-upm.png">
+      <publishTime>04/17/2016 16:54:31</publishTime>
+    </File>
+    <File Include="Imagenes/manual1.JPG">
+      <publishTime>06/09/2016 13:57:19</publishTime>
+    </File>
+    <File Include="Imagenes/manual10.JPG">
+      <publishTime>06/09/2016 13:57:19</publishTime>
+    </File>
+    <File Include="Imagenes/manual11.JPG">
+      <publishTime>06/09/2016 13:57:19</publishTime>
+    </File>
+    <File Include="Imagenes/manual12.JPG">
+      <publishTime>06/09/2016 13:57:19</publishTime>
+    </File>
+    <File Include="Imagenes/manual13.JPG">
+      <publishTime>06/09/2016 13:57:19</publishTime>
+    </File>
+    <File Include="Imagenes/manual14.JPG">
+      <publishTime>06/09/2016 13:57:19</publishTime>
+    </File>
+    <File Include="Imagenes/manual15.JPG">
+      <publishTime>06/09/2016 13:57:19</publishTime>
+    </File>
+    <File Include="Imagenes/manual16.JPG">
+      <publishTime>06/09/2016 13:57:19</publishTime>
+    </File>
+    <File Include="Imagenes/manual17.JPG">
+      <publishTime>06/09/2016 13:57:19</publishTime>
+    </File>
+    <File Include="Imagenes/manual2.JPG">
+      <publishTime>06/09/2016 13:57:19</publishTime>
+    </File>
+    <File Include="Imagenes/manual3.JPG">
+      <publishTime>06/09/2016 13:57:19</publishTime>
+    </File>
+    <File Include="Imagenes/manual4.JPG">
+      <publishTime>06/09/2016 13:57:19</publishTime>
+    </File>
+    <File Include="Imagenes/manual5.JPG">
+      <publishTime>06/09/2016 13:57:19</publishTime>
+    </File>
+    <File Include="Imagenes/manual6.JPG">
+      <publishTime>06/09/2016 13:57:19</publishTime>
+    </File>
+    <File Include="Imagenes/manual7.JPG">
+      <publishTime>06/09/2016 13:57:19</publishTime>
+    </File>
+    <File Include="Imagenes/manual8.JPG">
+      <publishTime>06/09/2016 13:57:19</publishTime>
+    </File>
+    <File Include="Imagenes/manual9.JPG">
+      <publishTime>06/09/2016 13:57:19</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>04/17/2016 16:50:05</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>03/14/2016 19:25:59</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>03/14/2016 19:25:59</publishTime>
+    </File>
+    <File Include="Scripts/go-debug.js">
+      <publishTime>03/05/2016 13:02:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>03/14/2016 19:26:10</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>03/14/2016 19:26:10</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>03/14/2016 19:26:10</publishTime>
+    </File>
+    <File Include="Scripts/jsonNodos.json">
+      <publishTime>05/02/2016 14:20:04</publishTime>
+    </File>
+    <File Include="Scripts/knockout-2.3.0.debug.js">
+      <publishTime>03/14/2016 19:26:11</publishTime>
+    </File>
+    <File Include="Scripts/knockout-2.3.0.js">
+      <publishTime>03/14/2016 19:26:11</publishTime>
+    </File>
+    <File Include="Scripts/knockout.validation.debug.js">
+      <publishTime>03/14/2016 19:26:11</publishTime>
+    </File>
+    <File Include="Scripts/knockout.validation.js">
+      <publishTime>03/14/2016 19:26:11</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>02/28/2016 17:19:47</publishTime>
+    </File>
+    <File Include="Scripts/pintarNodos.js">
+      <publishTime>05/17/2016 17:35:12</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>02/28/2016 17:19:47</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>02/28/2016 17:19:47</publishTime>
+    </File>
+    <File Include="Scripts/script-principal.js">
+      <publishTime>05/08/2016 13:29:33</publishTime>
+    </File>
+    <File Include="Views/Ayuda/Ayuda.cshtml">
+      <publishTime>06/10/2016 20:18:46</publishTime>
+    </File>
+    <File Include="Views/Contacto/Contacto.cshtml">
+      <publishTime>06/11/2016 17:23:28</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>05/17/2016 17:35:14</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>05/12/2016 20:12:45</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>04/17/2016 17:20:58</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>04/17/2016 16:58:12</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/13/2016 19:06:57</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
