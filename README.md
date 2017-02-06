@@ -1,3 +1,7 @@
 # Semantic-PHI-BASE-Visualization-Web-Platform
-Semantic PHI-BASE Visualization Web Platform es parte de un sistema Web que se conforma por las aplicaciones Web: 1) Semantic PHI-BASE Web Interface y 2) Semantic PHI-BASE Visualization Web Platform. 1) Se encarga de generar consultas SPARQL sobre la base de datos semántica: Semantic PHI-BASE y 2) Visualiza los resultados de la consultas SPARQL generados por 1) mediante el uso de grafos.
-Deploy: Gerardo Lagunes García.
+Semantic PHI-Base Web Interface is part of a web platform that it is composed by the following web applications:
+
+1) Semantic PHI-Base Web Interface
+2) Semantic PHI-Base Visualization Web Platform
+
+The first one is in charge of creating SPARQL queries and execute them against the semantic triplestore. The second one is in charge of visualize the results returned.
